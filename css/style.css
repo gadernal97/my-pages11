@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+:root{
+    --cor0:#D2FAE1;
+    --cor1:#25DB8C;
+    --cor2:#2EF0BF;
+    --cor3:#BDDBD9;
+    --cor4:#24E7FF;
+}
+body{
+    background-color: var(--cor0);
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+
+}
+#menu ul{
+    list-style: none;
+    padding: 0px;
+    margin:0px;
+    float: right;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+#menu ul li{
+    display: inline-block;
+}
+#menu ul li a{
+    text-decoration:none;
+    padding:4px 12px;
+    color:black;
+}
+#menu ul li a:hover{
+    color: var(--cor1);
+    border-bottom: 3px solid var(--cor4);
+}
+header{
+    background-image:url('../img/tim-mossholder-bo3SHP58C3g-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    
+    text-align: center;
+    color: white;
+}
+main{
+   
+    padding: 15px;
+
+}
+section{
+ width: 1000px;
+ background-color: var(--cor0);
+ text-align: justify;
+ padding: 15px;
+ margin:auto;
+}
+section ul{
+    list-style: none;
+}
+.article1{
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+.article1 > h2{
+    margin: 15px;
+    text-align:center;
+    font-size: 2em;
+}
+.article1 >p{
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+.content-flex{
+    display: flex;
+    padding: 15px;
+}
+.content-flex img{
+    width: 100%;
+}
+.content-flex p{
+    padding: 15px;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+.article2 h2{
+ text-align: center;
+}
+.content{
+    display:flex;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 5px;
+    justify-content: center;
+    background-color: var(--cor4);
+    width: 350px;
+    height: 350px;
+}
+.box-content{
+    display: flex;
+}
+.box1{
+ width: 300px;
+ height: 300px;
+ margin: 5px;
+ text-align: center;
+ font-size: 1.4em;
+ 
+}
+button{
+    border:none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: var(--cor1);
+    border-radius: 50px;
+}
+button:active{
+    transform: translateY(4px);
+}
+footer{
+    background-color: var(--cor4);
+    font-size: 1.1em;
+    
+}
+@media screen  and (min-device-width:380px) {
+    body{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    section{
+        width: 70%;
+    }
+    footer{
+      width: 100%;
+    }
+}
+@media screen and (max-width:800px){
+    .content-flex{
+        display: block;
+    }
+    .content{
+        display: block;
+    }
+    .box-content{
+        display: block;
+    }
+}
